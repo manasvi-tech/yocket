@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+html{
+   font-size: 62.5%;
+
+}
+.signup-page{
+    display: flex;
+}
+
+.partial{
+    flex:4;
+    height: 100vh;
+    background-color: #FDF2E0;
+    padding: 10rem 5rem;
+}
+
+.main{
+    flex:3;
+    
+}
+h2{
+    color: grey;
+    margin: 1rem 0;
+}
+.container {
+    padding: 10rem 5rem;
+    width: 300px;
+    margin: 0 auto;
+}
+.tabs {
+    display: flex;
+    justify-content: left;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.tab {
+    margin-top: 2rem;
+    padding: 10px;
+}
+.tab.active {
+    border-bottom: 2px solid orange;
+}
+.form {
+    display: none;
+
+}
+.form.active {
+    display: block;
+}
+.form input {
+    width: 80%;
+    padding: 5px;
+    margin: 10px 0;
+}
+.form button {
+    width: 80%;
+    padding: 10px;
+    margin: 1rem 0;
+    background-color: #E37B47;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.or{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+hr{
+    margin: 0 2rem;
+    width: 100%;
+    height: 1%;
+}
+
+.google-anchor{
+    text-decoration: none;
+}
+
+.google-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+.googleLogo{
+    width: 5%;
+    margin: 0 10px;
+}
+.form .google-login img {
+    vertical-align: middle;
+    margin-right: 5px;
+}

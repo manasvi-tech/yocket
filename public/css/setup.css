@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+html{
+   font-size: 62.5%;
+
+}
+
+.setup-page{
+    display: flex;
+}
+
+.partial{
+    flex:4;
+    background-color:#FDF2E0;
+    padding: 10rem 5rem
+}
+
+
+.container {
+    flex: 3;
+    background: #fff;
+    padding: 10rem 1rem;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#registrationForm{
+    height: 70%;
+    width: 100%;
+    padding: 0 5rem;
+    overflow-y: scroll;
+    /* border: 1px solid blue; */
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin: 1.5rem 0;
+    justify-content: space-between;
+}
+
+.input-group>label{
+    padding: 0 10px;
+    font-size: 1.4rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: orange;
+}
+
+.name-group{
+    margin: 2rem 0;
+    display: flex;
+}
+
+.degree-selection {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    
+}
+
+.degree-options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.degree-option {
+    margin-top: 1rem;
+    padding: 3rem 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.degree-option>img{
+    margin-bottom: 10px;
+}
+
+.degree-option.selected {
+    border-color: orange;
+    color: orange;
+}
+
+.hover:hover {
+    border: 1px solid orange;
+}
+
+.courses-of-interest {
+    margin: 20px 0;
+}
+
+.courses-of-interest>label{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 10px;
+}
+
+.courses-list {
+    margin-top: 10px;
+    max-height: 100px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+}
+
+.courses-list.show {
+    display: block;
+}
+
+.course {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.course:hover {
+    background-color: #f0f0f0;
+}
+
+.course:last-child {
+    border-bottom: none;
+}
+
+.agreement {
+    display: flex;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.agreement label {
+    margin-left: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+button.active {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yocket</title>
+    <link rel="stylesheet" href="/css/setup.css">
+</head>
+
+<body>
+    <div class="setup-page">
+        <div class="partial">
+            {{>loginPartial}}
+        </div>
+    
+    <div class="container">
+        <h1>Hi, let's begin!</h1>
+        <p>It's a one-time set up, takes less than 1 min, promise <span>😊</span></p>
+
+        <form id="registrationForm" action="/setup" method="POST">
+            <div class="name-group">
+                <div class="input-group">
+                    <label for="firstName">First Name</label>
+                    <input name="firstname" class="hover" type="text" id="firstName" placeholder="First name">
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Last Name</label>
+                    <input name="lastname" class="hover" type="text" id="lastName" placeholder="Last name">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email ID</label>
+                <input name="email" class="hover" type="email" id="email" placeholder="eg: example@gmail.com">
+            </div>
+
+             <div class="degree-selection">
+                <p><b>Degree you're planning for </b><span>(NOT the one you have)</span></p>
+                <div class="degree-options">
+                    <div class="degree-option" onclick="selectDegree('bachelor')">
+                        <img src="/images/bachelorLogo.png" alt="">
+                        Bachelor's
+                    </div>
+                    <div class="degree-option" onclick="selectDegree('master')">
+                        <img src="/images/masterLogo.png" alt="">
+                        Master's
+                    </div>
+                </div>
+                <input type="hidden" id="selectedDegree" name="selectedDegree">
+            </div>
+            
+            <div class="courses-of-interest">
+                <label for="courseSearch">Course of interest</label>
+                <input name="course" type="text" id="courseSearch" placeholder="Search Courses" onfocus="showCoursesList()" oninput="filterCourses()">
+                <div class="courses-list hidden">
+                    <div class="course" onclick="selectCourse('Computer Science')">Computer Science</div>
+                    <div class="course" onclick="selectCourse('Data Science and Data Analytics')">Data Science and Data Analytics</div>
+                    <div class="course" onclick="selectCourse('Business Analytics')">Business Analytics</div>
+                    <div class="course" onclick="selectCourse('Mechanical Engineering')">Mechanical Engineering</div>
+                    <div class="course" onclick="selectCourse('Management Information Systems')">Management Information Systems</div>
+                    <div class="course" onclick="selectCourse('Electrical and Computer Engineering')">Electrical and Computer Engineering</div>
+                    <div class="course" onclick="selectCourse('Computer Engineering')">Computer Engineering</div>
+                    <div class="course" onclick="selectCourse('Human-Computer Interaction')">Human-Computer Interaction</div>
+                    <div class="course" onclick="selectCourse('Artificial Intelligence')">Artificial Intelligence</div>
+                    <div class="course" onclick="selectCourse('Software Engineering')">Software Engineering</div>
+                    <div class="course" onclick="selectCourse('Cybersecurity')">Cybersecurity</div>
+                    <div class="course" onclick="selectCourse('Information Technology')">Information Technology</div>
+                    <div class="course" onclick="selectCourse('Bioinformatics')">Bioinformatics</div>
+                    <div class="course" onclick="selectCourse('Robotics')">Robotics</div>
+                    <div class="course" onclick="selectCourse('Environmental Engineering')">Environmental Engineering</div>
+                    <div class="course" onclick="selectCourse('Civil Engineering')">Civil Engineering</div>
+                    <div class="course" onclick="selectCourse('Chemical Engineering')">Chemical Engineering</div>
+                    <div class="course" onclick="selectCourse('Industrial Engineering')">Industrial Engineering</div>
+                    <div class="course" onclick="selectCourse('Aerospace Engineering')">Aerospace Engineering</div>
+                    <div class="course" onclick="selectCourse('Biomedical Engineering')">Biomedical Engineering</div>
+                </div>
+            </div>
+
+            <div class="agreement">
+                <input type="checkbox" id="agree">
+                <label for="agree">I've read and I agree to Yocket's privacy policy.</label>
+            </div>
+
+            <button type="submit" id="proceedButton" disabled>Proceed To Next</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="/js/setup.js"></script>
+</body>
+
+</html>

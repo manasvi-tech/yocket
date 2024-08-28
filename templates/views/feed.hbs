@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+<link rel="stylesheet" href="/css/feed.css">
+
+<body>
+    {{>navbar}}
+
+    {{#if user.studentInfo}}
+    <div class="feed">
+        <h1 style="margin-bottom: 30px;">hi {{user.studentInfo.firstname}}, this is your feed page</h1>
+        <a href="/Logout"><button class="explore-nav transform" >
+        Logout
+    </button></a>
+    </div>
+
+    {{else}}
+
+    <h1>Uh-Oh, seems like you haven't set up your profile yet</h1>
+    <a href="/setup"><button type="button">Setup you Profile</button></a>
+    {{/if}}
+
+    
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<style>
+    /* navbar started */
+    nav {
+        height: 56px;
+        padding: 8px 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .explore-nav {
+        background-color: #E37712;
+        padding: 4px 12px;
+        border: 0;
+        border-radius: 8px;
+        margin: 0 3px;
+        color: white;
+        margin-right: 10px;
+        width: 77px;
+        height: 40px;
+    }
+
+    .download {
+        padding: 4px 12px;
+        color: #343CFF;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #343CFF;
+        border-radius: 8px;
+    }
+
+    .fa-search {
+        font-size: 1.8rem;
+        margin-right: 2.5rem;
+        color: black;
+    }
+
+    nav>ul>li>a {
+        color: #697386;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 0 8px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .logo {
+        width: 8vw;
+    }
+
+    nav>ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    nav>ul>li {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .premium {
+        color: #E37712;
+        font-weight: bold;
+    }
+
+    /* navbar ended*/
+</style>
+
+<nav>
+    <ul>
+        <li class="logo"><a href="/"></i><img src="images/logo.png" alt=""></a></li>
+        <li><a href="/feed">Feed</a></li>
+        <li><a href="">Explore </a></li>
+        <li><a href="">College Finder </a></li>
+        <li><a href="">Admits & Rejects</a></li>
+        <li><a href="">Products</a></li>
+        <li><a class="premium" href=""><i style="font-size: 1.3rem;" class="fa-solid fa-crown"></i><span>
+                    Premium</span></a></li>
+        <li><a href=""><i class="fa-regular fa-user"></i> Ask Our Experts</a></li>
+    </ul>
+    <div class="right-nav">
+        <a href=""><i class="fa-solid fa-search"></i></a>
+        
+        <a href="/signup"><button class="explore-nav transform">Login</button></a>
+
+        <button class="download transform"><i class="fa-solid fa-download"></i>Download</button>
+    </div>
+</nav>
